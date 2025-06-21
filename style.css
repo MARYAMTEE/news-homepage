@@ -18,12 +18,16 @@ img{
 }
 
 body{
-    font-size: clamp(0.9rem, 1.2vw, 0.9375rem);
+    /* font-size: clamp(0.9rem, 1.2vw, 0.9375rem); */
+    font-size: 0.9375rem;
     font-family: "Inter", sans-serif;
-    /* Weights: 400, 700, 800 */
-    /* display: grid;
-    place-items: center; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: var(--off-white);
+    margin: 2rem 1rem;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
 }
 
 /* header section */
@@ -98,4 +102,70 @@ nav.toggle{
 .close-btn{
     position: absolute;
     right: 1rem;
+}
+
+/* Banner Section */
+.banner{
+    background-image: url(./images/image-web-3-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 18.75rem;
+    margin: 1.5rem 0;
+}
+
+.text h1{
+    font-weight: 800;
+    font-size: 2.3rem;
+    line-height: 1;
+    max-width: 17rem;
+    color: var(--very-dark-blue);
+}
+
+.text-btn p{
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+/* Button */
+.text-btn button{
+    background-color: var(--soft-red);
+    border: none;
+    outline: none;
+    padding: 0.9rem 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+
+#news-update-title{
+    color: var(--soft-orange);
+}
+
+/* Aside */
+aside{
+    background-color: var(--very-dark-blue);
+    padding: 1rem;
+    margin: 3rem 0;
+}
+
+#news-update-title{
+    font-size: 1.8rem;
+}
+
+.aside-txt{
+    padding: 1.8rem 0;
+}
+
+.aside-txt h3{
+    color: var(--off-white);
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+.aside-txt p{
+    line-height: 1.8;
 }
