@@ -76,6 +76,19 @@ nav.toggle{
     text-decoration: underline;
 }
 
+/* Overlay filter */
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: 4px;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
 /* Open and close button */
 .open-btn{
     z-index: 1;
