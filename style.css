@@ -39,8 +39,7 @@ header{
 
 /* navigation */
 nav{
-    display: none;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     background-color: var(--off-white);
@@ -50,10 +49,12 @@ nav{
     z-index: 10;
     overflow: hidden;
     padding: 1rem;
-}
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    }
 
 nav.toggle{
-    display: block;
+    transform: translateX(0);
 }
 
 .nav-menu{
