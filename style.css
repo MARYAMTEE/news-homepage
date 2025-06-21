@@ -169,3 +169,20 @@ aside{
 .aside-txt p{
     line-height: 1.8;
 }
+
+/* Latest Section */
+.latest-update{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.latest-img{
+    width: 6.2rem;
+    height: 8rem;
+}
+
+.row{
+    display: flex;
+    gap: 2rem;
+}
