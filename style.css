@@ -24,9 +24,9 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--off-white);
-    margin: 2rem 1rem;
-    font-weight: 400;
+    background-color: white;
+    margin: 1rem 1rem 4rem;
+    font-weight: 500;
     color: var(--dark-grayish-blue);
 }
 
@@ -39,6 +39,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Logo */
+.logo-img{
+    width: 2.8rem;
 }
 
 /* navigation */
@@ -138,7 +143,6 @@ nav.toggle{
     color: var(--very-dark-blue);
     letter-spacing: 3px;
     font-size: 0.9rem;
-    margin: 1rem 0;
 }
 
 #news-update-title{
@@ -149,7 +153,7 @@ nav.toggle{
 aside{
     background-color: var(--very-dark-blue);
     padding: 1rem;
-    margin: 3rem 0;
+    margin: 3.5rem 0;
 }
 
 #news-update-title{
@@ -170,6 +174,11 @@ aside{
     line-height: 1.8;
 }
 
+hr{
+    background-color: var(--dark-grayish-blue);
+    border-color: var(--dark-grayish-blue);
+}
+
 /* Latest Section */
 .latest-update{
     display: flex;
@@ -184,5 +193,24 @@ aside{
 
 .row{
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.column h4{
+    color: var(--soft-red);
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+.column h5{
+    color: var(--very-dark-blue);
+    font-weight: 800;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+.column p{
+    line-height: 1.7;
 }
