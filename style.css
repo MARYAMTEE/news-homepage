@@ -18,8 +18,8 @@ img{
 }
 
 body{
-    /* font-size: clamp(0.9rem, 1.2vw, 0.9375rem); */
-    font-size: 0.9375rem;
+    font-size: clamp(0.9rem, 1.2vw, 0.9375rem); 
+    /* font-size: 0.9375rem; */
     font-family: "Inter", sans-serif;
     display: flex;
     justify-content: center;
@@ -31,8 +31,7 @@ body{
 }
 
 .container{
-    max-width: 22rem;
-    
+    max-width: 22rem; 
 }
 
 /* header section */
@@ -120,7 +119,7 @@ nav.toggle{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 18.75rem;
+    height: 18.7rem;
     margin: 1.5rem 0;
 }
 
@@ -133,7 +132,7 @@ nav.toggle{
 }
 
 .text-btn p{
-    margin: 1rem 0;
+    margin: 1rem 0 1.5rem;
     line-height: 1.6;
 }
 
@@ -148,10 +147,12 @@ nav.toggle{
     color: var(--very-dark-blue);
     letter-spacing: 3px;
     font-size: 0.9rem;
+    cursor: pointer;
 }
 
-#news-update-title{
-    color: var(--soft-orange);
+.text-btn button:hover{
+    background-color: var(--very-dark-blue);
+    color: var(--off-white);
 }
 
 /* Aside */
@@ -163,20 +164,26 @@ aside{
 
 #news-update-title{
     font-size: 1.8rem;
+    color: var(--soft-orange);
 }
 
 .aside-txt{
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }
 
 .aside-txt:last-child{
-    padding: 2rem 0 0;
+    padding: 1.5rem 0 0;
 }
 
 .aside-txt h3{
     color: var(--off-white);
     font-weight: 700;
     line-height: 1.8;
+    cursor: pointer;
+}
+
+.aside-txt h3:hover{
+    color: var(--soft-orange);
 }
 
 .aside-txt p{
@@ -192,6 +199,7 @@ hr{
 .latest-update{
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 2rem;
 }
 
@@ -211,12 +219,17 @@ hr{
     color: var(--soft-red);
     font-weight: 700;
     font-size: 1.9rem;
+    cursor: pointer;
+}
+
+.column h4:hover{
+    color: var(--soft-orange);
 }
 
 .column h5{
     color: var(--very-dark-blue);
     font-weight: 800;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 2;
     white-space: none;
     word-break: none;
@@ -224,4 +237,73 @@ hr{
 
 .column p{
     line-height: 1.7;
+}
+
+@media(mIN-width: 64rem){
+    body{
+    }
+
+    .banner{
+        background-image: url(./images/image-web-3-desktop.jpg);
+        margin: 0;
+    }
+
+    .container{
+        max-width: 67rem;
+    }
+
+    .large-screen-size{
+        display: flex;
+        gap: 1.8rem;
+    }
+
+    /* Aside section */
+    aside{
+        margin: 0;
+    }
+
+    #news-update-title{
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    .aside-txt h3{
+        font-size: 1.2rem;
+    }
+
+     /* Banner Section */
+    .text h1{
+        font-size: 3.3rem;
+        letter-spacing: 1px;
+    }
+
+    .text-btn p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .text{
+        display: flex;
+        gap: 6rem;
+        margin-block-start: 2rem;
+    }
+
+    .txt{
+        flex: 1;
+    }
+
+    .text-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .latest-update{
+        margin-block-start: 4rem;
+        flex-direction: row;
+    }
+
+
+   
 }
