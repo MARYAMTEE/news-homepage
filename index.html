@@ -16,91 +16,93 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="./images/logo.svg" class="logo-img" alt="Logo Image">
-            </a>
+    <div class="container">
+        <header>
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="./images/logo.svg" class="logo-img" alt="Logo Image">
+                </a>
 
-            <img src="./images/icon-menu.svg" class="open-btn" alt="Open button">
-        </div>
+                <img src="./images/icon-menu.svg" class="open-btn" alt="Open button">
+            </div>
 
+            
+            <nav aria-label="Primary">
+                <img src="./images/icon-menu-close.svg" class="close-btn" alt="Close button">
+                <ul class="nav-menu">
+                    <li class="nav-list"><a class="nav-link" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-list"><a href="#" class="nav-link">New</a></li>
+                    <li class="nav-list"><a href="#" class="nav-link">Popular</a></li>
+                    <li class="nav-list"><a href="#" class="nav-link">Trending</a></li>
+                    <li class="nav-list"><a href="#" class="nav-link">Categories</a></li>
+                </ul>
+            </nav>
+        </header>
         
-        <nav aria-label="Primary">
-            <img src="./images/icon-menu-close.svg" class="close-btn" alt="Close button">
-            <ul class="nav-menu">
-                <li class="nav-list"><a class="nav-link" aria-current="page" href="#">Home</a></li>
-                <li class="nav-list"><a href="#" class="nav-link">New</a></li>
-                <li class="nav-list"><a href="#" class="nav-link">Popular</a></li>
-                <li class="nav-list"><a href="#" class="nav-link">Trending</a></li>
-                <li class="nav-list"><a href="#" class="nav-link">Categories</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="overlay" id="overlay"></div>
+
+        <main>
+            <section class="container">
+                <div class="header-section">
+                    <div class="banner" aria-label="Hero image"></div>
+                    <div class="text">
+                        <h1>The Bright Future of Web 3.0?</h1>
+                        <div class="text-btn">
+                            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                            But is it really fulfilling its promise?</p>
+                            <button type="button" aria-label="read more">Read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <aside aria-labelledby="news-update-title">
+                    <h2 id="news-update-title">New</h2>
+                    <div class="aside-txt">
+                        <h3>Hydrogen VS Electric Cars</h3>
+                        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </div>
+                    <hr>
+                    <div class="aside-txt">
+                        <h3>The Downsides of AI Artistry</h3>
+                        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                    </div>
+                    <hr>
+                    <div class="aside-txt">
+                        <h3>Is VC Funding Drying Up?</h3>
+                        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                    </div>
+                </aside>
+
+                <div class="latest-update">
+                    <div class="first-section row">
+                        <img src="./images/image-retro-pcs.jpg" class="latest-img" alt="Rectro Image" />
+                        <div class="first-section-text column">
+                            <h4>01</h4>
+                            <h5>Reviving Retro PCs</h5>
+                            <p>What happens when old PCs are given modern upgrades?</p>
+                        </div>
+                    </div>
+
+                    <div class="second-section row">
+                        <img src="./images/image-top-laptops.jpg" class="latest-img" alt="Top Laptop" />
+                        <div class="second-section-text column">
+                            <h4>02</h4>
+                            <h5>Top 10 Laptops of 2022</h5>
+                            <p>Our best picks for various needs and budgets.</p>
+                        </div>
+                    </div>
+
+                    <div class="third-section row">
+                        <img src="./images/image-gaming-growth.jpg" class="latest-img" alt="Game Image" />
+                        <div class="third-section-text column">
+                            <h4>03</h4>
+                            <h5>The Growth of Gaming</h5>
+                            <p>How the pandemic has sparked fresh opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     
-    <div class="overlay" id="overlay"></div>
-
-    <main>
-        <section class="container">
-            <div class="header-section">
-                <div class="banner" aria-label="Hero image"></div>
-                <div class="text">
-                    <h1>The Bright Future of Web 3.0?</h1>
-                    <div class="text-btn">
-                        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-                        But is it really fulfilling its promise?</p>
-                        <button type="button" aria-label="read more">Read more</button>
-                    </div>
-                </div>
-            </div>
-
-            <aside aria-labelledby="news-update-title">
-                <h2 id="news-update-title">New</h2>
-                <div class="aside-txt">
-                    <h3>Hydrogen VS Electric Cars</h3>
-                    <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-                </div>
-                <hr>
-                <div class="aside-txt">
-                    <h3>The Downsides of AI Artistry</h3>
-                    <p>What are the possible adverse effects of on-demand AI image generation?</p>
-                </div>
-                <hr>
-                <div class="aside-txt">
-                    <h3>Is VC Funding Drying Up?</h3>
-                    <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-                </div>
-            </aside>
-
-            <div class="latest-update">
-                <div class="first-section row">
-                    <img src="./images/image-retro-pcs.jpg" class="latest-img" alt="Rectro Image" />
-                    <div class="first-section-text column">
-                        <h4>01</h4>
-                        <h5>Reviving Retro PCs</h5>
-                        <p>What happens when old PCs are given modern upgrades?</p>
-                    </div>
-                </div>
-
-                <div class="second-section row">
-                    <img src="./images/image-top-laptops.jpg" class="latest-img" alt="Top Laptop" />
-                    <div class="second-section-text column">
-                        <h4>02</h4>
-                        <h5>Top 10 Laptops of 2022</h5>
-                        <p>Our best picks for various needs and budgets.</p>
-                    </div>
-                </div>
-
-                <div class="third-section row">
-                    <img src="./images/image-gaming-growth.jpg" class="latest-img" alt="Game Image" />
-                    <div class="third-section-text column">
-                        <h4>03</h4>
-                        <h5>The Growth of Gaming</h5>
-                        <p>How the pandemic has sparked fresh opportunities.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
 </body>
 </html>

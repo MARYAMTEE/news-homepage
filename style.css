@@ -23,11 +23,16 @@ body{
     font-family: "Inter", sans-serif;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     background-color: white;
-    margin: 1rem 1rem 4rem;
     font-weight: 500;
     color: var(--dark-grayish-blue);
+    margin: 1.5rem 1rem 4rem; 
+}
+
+.container{
+    max-width: 22rem;
+    
 }
 
 /* header section */
@@ -152,8 +157,8 @@ nav.toggle{
 /* Aside */
 aside{
     background-color: var(--very-dark-blue);
-    padding: 1rem;
-    margin: 3.5rem 0;
+    padding: 1.2rem;
+    margin: 4rem 0;
 }
 
 #news-update-title{
@@ -161,7 +166,11 @@ aside{
 }
 
 .aside-txt{
-    padding: 1.8rem 0;
+    padding: 2rem 0;
+}
+
+.aside-txt:last-child{
+    padding: 2rem 0 0;
 }
 
 .aside-txt h3{
@@ -209,6 +218,8 @@ hr{
     font-weight: 800;
     font-size: 1.1rem;
     line-height: 2;
+    white-space: none;
+    word-break: none;
 }
 
 .column p{
