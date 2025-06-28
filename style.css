@@ -234,7 +234,6 @@ hr{
     font-size: 1rem;
     line-height: 2;
     white-space: none;
-    word-break: none;
 }
 
 .column p{
@@ -309,7 +308,7 @@ hr{
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 1.8rem;
-        margin: 2rem 0 4rem;
+        margin: 2rem 0 4.5rem;
     }
 
     /* Logo Image */
