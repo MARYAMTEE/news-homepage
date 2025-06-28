@@ -149,6 +149,7 @@ nav.toggle{
     letter-spacing: 3px;
     font-size: 0.9rem;
     cursor: pointer;
+    transition: all 0.3s ease-in;
 }
 
 .text-btn button:hover{
@@ -181,6 +182,7 @@ aside{
     font-weight: 700;
     line-height: 1.8;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .aside-txt h3:hover{
@@ -221,6 +223,7 @@ hr{
     font-weight: 700;
     font-size: 1.9rem;
     cursor: pointer;
+    transition: all 0.3s linear;
 }
 
 .column h4:hover{
@@ -240,9 +243,54 @@ hr{
     line-height: 1.7;
 }
 
-@media(min-width: 64rem){
+@media(min-width: 48rem) and (max-width: 68.125rem){
     body{
-        margin: 4rem 0 8rem; 
+        margin: 3rem 0 2rem;
+    }
+
+    .large-screen-size{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.8rem;
+        margin: 2rem 0 4rem;
+    }
+
+    .container{
+        max-width: 88%;
+    }
+
+    .banner{
+        height: 13rem;
+        margin: 0;
+        margin-block-end: 1rem;
+    }
+
+    /* Aside section */
+    aside{
+        margin: 0;
+    }
+
+    /* Texts */
+    .text h1 {
+        font-weight: 800;
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .text-btn p {
+        margin: 1rem 0;
+        line-height: 1.5;
+    }
+
+    .latest-update{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media(min-width: 68.1875rem){
+    body{
+        margin: 4rem 0;
     }
     header{
         display: flex;
@@ -256,12 +304,12 @@ hr{
     }
 
     .container{
-        max-width: 67rem;
+        max-width: 67.5rem;
     }
 
     .large-screen-size{
         display: grid;
-  grid-template-columns: 2fr 1fr;;
+        grid-template-columns: 2fr 1fr;
         gap: 1.8rem;
         margin: 2rem 0 4rem;
     }
