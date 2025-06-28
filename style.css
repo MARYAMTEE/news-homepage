@@ -84,6 +84,7 @@ nav.toggle{
     color: var(--very-dark-blue);
     font-weight: 500;
     font-size: 1.3rem;
+    transition: all 0.2s ease;
 }
 
 .nav-link:hover{
