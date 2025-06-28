@@ -124,7 +124,7 @@ nav.toggle{
 
 .text h1{
     font-weight: 800;
-    font-size: 2.3rem;
+    font-size: 3rem;
     line-height: 1;
     max-width: 17rem;
     color: var(--very-dark-blue);
@@ -132,8 +132,7 @@ nav.toggle{
 
 .text-btn p{
     margin: 1rem 0 1.5rem;
-    line-height: 1.6;
-    /* max-width: 21rem; */
+    line-height: 1.8;
 }
 
 /* Button */
